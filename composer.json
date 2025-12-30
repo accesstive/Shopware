@@ -1,0 +1,37 @@
+{
+    "name": "accesstive/shopware-accesstive",
+    "version": "1.0.0",
+    "description": "Accesstive is an all-in-one accessibility platform that helps websites become inclusive, compliant, and user-friendly.",
+    "type": "shopware-platform-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Accesstive",
+            "homepage": "https://accesstive.com",
+            "role": "Developer",
+            "email": "support@accesstive.com"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.7.0",
+        "shopware/storefront": "~6.7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShopwareAccesstive\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "ShopwareAccesstive\\ShopwareAccesstive",
+        "plugin-icon": "src/Resources/config/accesstive.png",
+        "label": {
+            "de-DE": "Accesstive",
+            "en-GB": "Accesstive"
+        },
+        "description": {
+            "de-DE": "Accesstive ist eine plattform, die Websites für Menschen mit Behinderungen, die aufgrund von Störungen der Sehschärfe, der Hörschärfe, der motorischen Fähigkeiten oder der kognitiven Fähigkeiten nicht auf die Website zugreifen können, zugänglich macht.",
+            "en-GB": "Accesstive is an all-in-one accessibility platform that helps websites become inclusive, compliant, and user-friendly."
+        }
+    }
+}
+

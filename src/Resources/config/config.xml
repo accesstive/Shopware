@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Accessibility Assistant Settings</title>
+        <title lang="de-DE">Accessibility Assistant Einstellungen</title>
+
+        <input-field type="bool">
+            <name>enableAccesstive</name>
+            <label>Enable Accesstive</label>
+            <label lang="de-DE">Accesstive aktivieren</label>
+            <placeholder>Enable this option to load the Accesstive Assistant Widget on your storefront</placeholder>
+            <helpText>Enable this option to load the Accesstive Assistant Widget on your storefront</helpText>
+            <helpText lang="de-DE">Aktivieren Sie diese Option, um das Accesstive Assistant Widget in Ihrem Storefront zu laden</helpText>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>dataToken</name>
+            <label>Data Token</label>
+            <placeholder>Enter the data token that you received while purchasing the Accesstive Assistant Widget</placeholder>
+            <label lang="de-DE">Data Token</label>
+            <helpText>Enter the data token that you received while purchasing the Accesstive Assistant Widget</helpText>
+            <helpText lang="de-DE">Geben Sie den Data Token ein, den Sie beim Kauf des Accesstive Assistant Widget erhalten haben</helpText>            
+        </input-field>
+    </card>
+</config>

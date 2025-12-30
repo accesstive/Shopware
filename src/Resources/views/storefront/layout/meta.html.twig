@@ -1,0 +1,17 @@
+{% sw_extends '@Storefront/storefront/layout/meta.html.twig' %}
+
+{% block layout_head_javascript_hmr_mode %}
+    {{ parent() }}
+
+    {% if config('ShopwareAccesstive.config.enableAccesstive') %}
+        {% if config('ShopwareAccesstive.config.dataToken') %}
+            <!-- Script with data-token -->
+            <script async src="https://cdn.accesstive.com/assistance.js" type="module" data-token="{{ config('ShopwareAccesstive.config.dataToken') }}"></script>
+        {% else %}
+            <!-- Script without data-token but with id -->
+            <script src="https://cdn.accesstive.com/assistance.js" id="accesstive-assistant-js" type="module"></script>
+        {% endif %}
+    {% endif %}
+{% endblock %}
+
+
