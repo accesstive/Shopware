@@ -1,5 +1,5 @@
 {
-    "name": "accesstive/shopware-accesstive",
+    "name": "accesstive/shopware",
     "version": "1.0.0",
     "description": "Accesstive is an all-in-one accessibility platform that helps websites become inclusive, compliant, and user-friendly.",
     "type": "shopware-platform-plugin",
