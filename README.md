@@ -17,7 +17,6 @@ The Accessibility Assistant plugin seamlessly integrates the Accesstive Assistan
 
 - Shopware 6.7.0 or higher
 - PHP 8.1 or higher
-- Active internet connection (for loading the Accesstive Assistant widget)
 
 ## Installation
 
@@ -49,33 +48,6 @@ bin/console plugin:install --activate ShopwareAccesstive
 
 The Accesstive Assistant widget will now be loaded on your storefront pages.
 
-## Customization
-- Add below code at `/custom/plugins/AccessibilityAssistant/src/Resources/views/storefront/layout/meta.html.twig`
-
-```
-<script src="https://cdn.accesstive.com/assistance.js" id="accesstive-assistant-js" type="module"></script>
-```
-
-Or 
-```
-<script async src="https://cdn.accesstive.com/assistance.js" type="module" data-token="335Uj63rYKtx7R-guJOL2u"></script>
-```
-
-### Changing the Accesstive Token
-
-To use a different Accesstive token, edit the following file:
-
-```
-src/Resources/views/storefront/layout/meta.html.twig
-```
-
-Update the `data-token` attribute in the script tag with your token:
-
-```twig
-<script async src="https://cdn.accesstive.com/assistance.js" type="module" data-token="YOUR_TOKEN_HERE"></script>
-```
-
-
 ## Troubleshooting
 
 ### Widget Not Appearing
@@ -93,7 +65,7 @@ Update the `data-token` attribute in the script tag with your token:
 If changes aren't appearing, try:
 ```bash
 bin/console cache:clear
-bin/console theme:compile
+bin/console plugin:refresh
 ```
 
 ## Uninstallation
@@ -113,30 +85,8 @@ ddev exec bin/console plugin:uninstall ShopwareAccesstive
 
 ## Support
 
-For issues, questions, or contributions:
-
-- **Author**: Team T3Planet
-- **Website**: https://t3planet.com
-- **Email**: support@t3planet.com
+For support and documentation, visit: https://accesstive.com
 
 ## License
 
-This plugin is licensed under the MIT License.
-
-## Version
-
-Current version: **1.0.0**
-
-## Changelog
-
-### 1.0.0
-- Initial release
-- Integration of Accesstive Assistant Widget
-- Configuration option to enable/disable the widget
-- Support for Shopware 6.7.0+
-
-## Additional Resources
-
-- [Shopware Plugin Documentation](https://developer.shopware.com/docs/guides/plugins/plugins/)
-- [Accesstive Assistant](https://accesstive.com/)
-
+GPL-2.0-or-later
