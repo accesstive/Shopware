@@ -24,7 +24,7 @@ The Accessibility Assistant plugin seamlessly integrates the Accesstive Assistan
 
 1. Add the plugin to your `composer.json`:
 ```bash
-composer require accesstive/shopware-accesstive
+composer require accesstive/shopware
 ```
 
 2. Refresh the plugin list:
@@ -68,19 +68,17 @@ bin/console cache:clear
 bin/console plugin:refresh
 ```
 
-## Uninstallation
+## Disable/De-Activate Plugin
 
 To uninstall the plugin:
 
 ```bash
 bin/console plugin:deactivate ShopwareAccesstive
-bin/console plugin:uninstall ShopwareAccesstive
 ```
 
 Or using DDEV:
 ```bash
 ddev exec bin/console plugin:deactivate ShopwareAccesstive
-ddev exec bin/console plugin:uninstall ShopwareAccesstive
 ```
 
 ## Support
